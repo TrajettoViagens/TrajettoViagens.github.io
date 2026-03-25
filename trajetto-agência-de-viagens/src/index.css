@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-trajetto-blue-dark: #003366;
+  --color-trajetto-blue-light: #87CEEB;
+  --color-trajetto-orange: #FF8C00;
+  --color-trajetto-beige: #F5F5DC;
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-trajetto-beige sm:bg-trajetto-blue-light antialiased font-sans;
+  }
+}
+
+@layer utilities {
+  .clip-diamond {
+    clip-path: polygon(50% 0%, 85% 50%, 50% 100%, 15% 50%);
+  }
+  .clip-diamond-small {
+    clip-path: polygon(50% 0%, 85% 50%, 50% 100%, 15% 50%);
+  }
+}
