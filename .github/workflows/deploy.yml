@@ -36,7 +36,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          # Removido o cache para evitar problemas com o arquivo de lock
 
       - name: Install dependencies
         run: npm install
